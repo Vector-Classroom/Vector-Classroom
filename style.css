@@ -87,7 +87,8 @@ nav ul li a:hover{
 }
 
 .main .box2 img{
-    height: 58vh;
+    /* height: 58vh */
+    height: 90%;
 }
 
 .main .box1{
@@ -100,7 +101,8 @@ nav ul li a:hover{
 }
 
 .main .box1 h1{
-  font-size: 50px;
+  /* font-size: 50px; */
+  font-size: 310%;
   font-style: Bold;
   margin: 1% 3%;
   line-height: 1.3;
