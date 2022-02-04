@@ -51,6 +51,10 @@ nav ul li{
     display: inline-block;
     margin-right: 50px;
 }
+.nav .menu-icon{
+    cursor: pointer;
+    display: none;
+}
 
 nav ul li a{
     text-decoration: none;
@@ -254,18 +258,36 @@ nav ul li a:hover{
     margin-bottom: 1%;
 }
 
-/* @media only screen and (max-width:700px) {
+@media only screen and (max-width:700px) {
     nav ul{
         width: 100%;
         background: linear-gradient(#756deb,#285dcf);
         position: absolute;
-
+        top: 75px;
+        right: 0;
+        z-index: 2;
     }
     nav ul li{
         display: block;
         margin-top: 10px;
+        margin-bottom: 10px;
     }
-} */
+    nav ul li a{
+    color: #fff;
+    }
+    .nav .menu-icon{
+        cursor: pointer;
+        display: block;
+        margin-right: 20px; 
+    }
+    .container .nav button{
+        margin-right: 30px;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+}
 
 /* ************************************************COMMUNITY******************************************************* */
 /* ************************************************COMMUNITY******************************************************* */
