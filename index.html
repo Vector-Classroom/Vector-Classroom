@@ -14,7 +14,7 @@
 
 <body>
     <div class="container">
-        <div class="nav">
+        <!-- <div class="nav">
             <img src="images/logo.svg" alt="" class="logo">
             <nav>
                 <ul id="menuList">
@@ -26,7 +26,25 @@
             </nav>
             <img src="https://img.icons8.com/plumpy/24/000000/menu--v2.png" class="menu-icon" onclick="togglemenu()">
             <button><a href="">Sign in</a></button>
-        </div>
+        </div> -->
+        <nav class="navbar">
+            <img src="images/logo.svg" alt="" class="logo">
+            <div class="box2">
+
+                <ul class="menuList">
+                    <li class="nav-item"><a href="articles.html" class="nav-links">Articles</a></li>
+                    <!-- <li class="nav-item"><a href="#Community" class="nav-links">Community</a></li> -->
+                    <li class="nav-item"><a href="#Courses" class="nav-links">Courses</a></li>
+                    <li class="nav-item"><a href="aboutus.html" class="nav-links">About us</a></li>
+                </ul>
+                <button><a href="">Sign in</a></button>
+                <div class="hamberger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
 
         <div class="main">
             <div class="box1">
@@ -111,18 +129,7 @@
                 Copyright &copy; 2022 VectorClassroom.com
             </div>
         </div>
-        <script>
-            var menuList = ducument.getElementById("menuList");
-            menuList.style.maxHeight = "0px";
-            function togglemenu() {
-                if (menuList.style.maxHeight == "0px") {
-                    menuList.style.maxHeight = "130px";
-                }
-                else {
-                    menuList.style.maxHeight = "0px";
-                }
-            }
-        </script>
+        <script src="index.js"> </script>
 </body>
 
 </html>

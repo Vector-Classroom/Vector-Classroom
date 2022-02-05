@@ -14,11 +14,10 @@ html{
 }
 /* ******************************************NAVIGATION BAR*********************************************** */
 /* ******************************************NAVIGATION BAR*********************************************** */
-.nav{
+/* .nav{
     display: flex;
     align-items: center;
     width: 100%;
-    /* background-color: wheat; */
 }
 
 .logo{
@@ -67,6 +66,131 @@ nav ul li a{
 
 nav ul li a:hover{
     color: rgba(108, 99, 255, 1);
+} */
+
+li {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+
+    /* background-color: aquamarine; */
+}
+
+.logo {
+    height: 43px;
+    margin: 20px;
+    /* margin-left: 65px; */
+}
+
+.menuList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    /* background-color: aquamarine; */
+}
+
+.nav-links {
+    transition: 0.7s ease;
+}
+
+/* nav ul li a:hover {
+    color: rgba(108, 99, 255, 1);
+} */
+.nav-links:hover {
+    color: rgba(108, 99, 255, 1);
+}
+
+.hamberger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+  .container .navbar button {
+        cursor: pointer;
+        border-style: none;
+        padding: 7px 17px;
+        border-radius: 5px;
+        margin: 0 30px;
+        background-color: rgba(108, 99, 255, 1);
+    }
+
+    .container .navbar button a {
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+    }
+    div.box2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+@media(max-width:768px) {
+    .hamberger {
+        display: block;
+    }
+
+    .hamberger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamberger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamberger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menuList {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        opacity: 95%;
+        
+    }
+
+    .nav-item {
+        margin: 5px 0;
+    }
+
+    .menuList.active {
+        left: 0;
+    }
+    
+    nav ul{
+        background: linear-gradient(#756deb,#285dcf);
+    }
+    nav ul li a{
+        color: #fff;
+        /* line-height: 0.7; */
+    }
 }
 /* ************************************************************MAIN BODY*********************************************** */
 /* ************************************************************MAIN BODY*********************************************** */
@@ -258,7 +382,7 @@ nav ul li a:hover{
     margin-bottom: 1%;
 }
 
-@media only screen and (max-width:700px) {
+/* @media only screen and (max-width:700px) {
     nav ul{
         width: 100%;
         background: linear-gradient(#756deb,#285dcf);
@@ -287,7 +411,7 @@ nav ul li a:hover{
         overflow: hidden;
         transition: 0.5s;
     }
-}
+} */
 
 /* ************************************************COMMUNITY******************************************************* */
 /* ************************************************COMMUNITY******************************************************* */
@@ -469,3 +593,34 @@ nav ul li a:hover{
     margin-top: 40px;
 }
 
+@media(max-width:768px) {
+    .container .articles{
+        display: flex;
+        flex-direction: column;
+        /* background-color: #756deb; */
+        justify-content: center;
+        align-items: center;
+    }
+    .container .articles .leftbox{
+        width: 90%;
+    }
+    .container .articles .rightbox{
+        width: 90%;
+    }
+    .footer{
+        height: 17%;
+    }
+    
+    .footer .upperblock .social a img{
+        margin: 15px 5px;
+      }
+    
+    .footer .name{
+        font-size: 10px;
+    }
+    
+    .footer .lowerblock{
+        height: 30%;
+    }
+    
+}
