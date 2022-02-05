@@ -147,6 +147,15 @@ a {
         align-items: center;
     }
 @media(max-width:768px) {
+
+    .logo {
+       width: 22%;
+       height: 100%;
+       margin: 2%;
+    }
+    .container .navbar button a {
+        font-size: 0.7rem;
+    }
     .hamberger {
         display: block;
     }
