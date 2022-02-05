@@ -90,12 +90,12 @@ a {
 .logo {
     height: 43px;
     margin: 20px;
-    /* margin-left: 65px; */
+    margin-left: 65px;
 }
 
 .menuList {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     gap: 30px;
     /* background-color: aquamarine; */
@@ -145,13 +145,22 @@ a {
         display: flex;
         flex-direction: row;
         align-items: center;
+        /* float: right; */
     }
 @media(max-width:768px) {
-
+    .navbar{
+        justify-content: none;
+        padding: 0 0;
+    }
     .logo {
-       width: 25%;
+       width: 30%;
        height: 100%;
-       margin: 2%;
+       margin-left: 0%;
+       
+       /* float: left; */
+    }
+    div.box2{
+        /* float: right; */
     }
     .container .navbar button a {
         font-size: 0.7rem;
@@ -162,6 +171,7 @@ a {
     }
     .hamberger {
         display: block;
+        margin-right: 20px;
     }
 
     .hamberger.active .bar:nth-child(2) {
