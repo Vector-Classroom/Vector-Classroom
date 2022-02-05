@@ -149,12 +149,16 @@ a {
 @media(max-width:768px) {
 
     .logo {
-       width: 22%;
+       width: 25%;
        height: 100%;
        margin: 2%;
     }
     .container .navbar button a {
         font-size: 0.7rem;
+    }
+    .container .navbar button{
+        padding: 5px 10px;
+        margin: 0 15px;
     }
     .hamberger {
         display: block;
