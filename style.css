@@ -155,12 +155,11 @@ a {
     .logo {
        width: 30%;
        height: 100%;
-       margin-left: 0%;
-       
+       margin-left: 20px;
        /* float: left; */
     }
     /* div.box2{
-        /* float: right; */
+         float: right; 
     } */
     .container .navbar button a {
         font-size: 0.7rem;
