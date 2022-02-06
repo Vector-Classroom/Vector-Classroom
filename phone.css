@@ -7,10 +7,10 @@ html{
     scroll-behavior: smooth;  
 }
 
-.logo{
+/* .logo{
     height: 35px;
     margin: 20px;
-}
+} */
 .main{
     flex-direction: column;
 }
