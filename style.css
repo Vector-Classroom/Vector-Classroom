@@ -645,4 +645,12 @@ a {
         height: 30%;
     }
     
+
+
+
+    .container .video{
+        display: flex;
+        height: 30%;
+        width: 75%;
+    }
 }
